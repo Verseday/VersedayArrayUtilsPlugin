@@ -1,5 +1,5 @@
-// Copyright 2024 Udon-Tobira, All Rights Reserved.
+// Copyright 2024 Verseday, All Rights Reserved.
 
-#include "LogUdonArrayUtilsLibrary.h"
+#include "LogVersedayArrayUtilsLibrary.h"
 
-DEFINE_LOG_CATEGORY(LogUdonArrayUtilsLibrary)
+DEFINE_LOG_CATEGORY(LogVersedayArrayUtilsLibrary)

@@ -5,7 +5,7 @@
 	"FriendlyName": "Array Utils",
 	"Description": "A plugin that extends the functionality of arrays.",
 	"Category": "Blueprints",
-	"CreatedBy": "Udon-Tobira",
+	"CreatedBy": "Verseday",
 	"CreatedByURL": "",
 	"DocsURL": "",
 	"FabURL": "com.epicgames.launcher://ue/Fab/product/",
@@ -17,7 +17,7 @@
 	"Installed": true,
 	"Modules": [
 		{
-			"Name": "UdonArrayUtils",
+			"Name": "VersedayArrayUtils",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"PlatformAllowList": [

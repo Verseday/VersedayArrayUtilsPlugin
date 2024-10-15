@@ -1,16 +1,16 @@
-// Copyright 2024 Udon-Tobira, All Rights Reserved.
+// Copyright 2024 Verseday, All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
-#include "LogUdonArrayUtilsLibrary.h"
+#include "LogVersedayArrayUtilsLibrary.h"
 #include "Net/Core/PushModel/PushModel.h"
 #include "UObject/UnrealType.h"
 
 #include <memory>
 
-#include "UdonArrayUtilsLibrary.generated.h"
+#include "VersedayArrayUtilsLibrary.generated.h"
 
 /**
  * Blueprint Function Library of array-related functions.
@@ -18,7 +18,7 @@
 // memo: In functions where CustomThunk is specified,
 // TArray<int32> is actually, TArray<WildCard> type.
 UCLASS()
-class UDONARRAYUTILS_API UUdonArrayUtilsLibrary
+class VERSEDAYARRAYUTILS_API UVersedayArrayUtilsLibrary
     : public UBlueprintFunctionLibrary {
 	GENERATED_BODY()
 
@@ -692,7 +692,7 @@ public:
 		// if binary predicate doesn't exist
 		if (!BinaryPredicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Binary predicate '%s' not found on object: %s"),
 			       *BinaryPredicateName.ToString(), *Object->GetName());
 
@@ -757,7 +757,7 @@ public:
 		// if predicate doesn't exist
 		if (!Predicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Predicate '%s' not found on object: %s"),
 			       *PredicateName.ToString(), *Object->GetName());
 
@@ -822,7 +822,7 @@ public:
 		// if predicate doesn't exist
 		if (!Predicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Predicate '%s' not found on object: %s"),
 			       *PredicateName.ToString(), *Object->GetName());
 
@@ -942,7 +942,7 @@ public:
 		// if predicate doesn't exist
 		if (!Predicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Predicate '%s' not found on object: %s"),
 			       *PredicateName.ToString(), *Object->GetName());
 
@@ -1128,7 +1128,7 @@ public:
 		// if predicate doesn't exist
 		if (!Predicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Predicate '%s' not found on object: %s"),
 			       *PredicateName.ToString(), *Object->GetName());
 
@@ -1208,7 +1208,7 @@ public:
 		// if ComparisonFunction doesn't exist
 		if (!ComparisonFunction) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("ComparisonFunction '%s' not found on object: %s"),
 			       *ComparisonFunctionName.ToString(), *Object->GetName());
 
@@ -1283,7 +1283,7 @@ public:
 		// if ComparisonFunction doesn't exist
 		if (!ComparisonFunction) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("ComparisonFunction '%s' not found on object: %s"),
 			       *ComparisonFunctionName.ToString(), *Object->GetName());
 
@@ -1363,7 +1363,7 @@ public:
 		// if ComparisonFunction doesn't exist
 		if (!ComparisonFunction) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("ComparisonFunction '%s' not found on object: %s"),
 			       *ComparisonFunctionName.ToString(), *Object->GetName());
 
@@ -1438,7 +1438,7 @@ public:
 		// if ComparisonFunction doesn't exist
 		if (!ComparisonFunction) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("ComparisonFunction '%s' not found on object: %s"),
 			       *ComparisonFunctionName.ToString(), *Object->GetName());
 
@@ -1503,7 +1503,7 @@ public:
 		// if predicate doesn't exist
 		if (!Predicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Predicate '%s' not found on object: %s"),
 			       *PredicateName.ToString(), *Object->GetName());
 
@@ -1620,7 +1620,7 @@ public:
 		// if predicate doesn't exist
 		if (!Predicate) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Predicate '%s' not found on object: %s"),
 			       *PredicateName.ToString(), *Object->GetName());
 
@@ -1792,7 +1792,7 @@ public:
 		// if comparison function doesn't exist
 		if (!ComparisonFunction) {
 			// output error
-			UE_LOG(LogUdonArrayUtilsLibrary, Error,
+			UE_LOG(LogVersedayArrayUtilsLibrary, Error,
 			       TEXT("Comparison function '%s' not found on object: %s"),
 			       *ComparisonFunctionName.ToString(), *Object->GetName());
 

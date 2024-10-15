@@ -1,7 +1,7 @@
-// Copyright 2024 Udon-Tobira, All Rights Reserved.
+// Copyright 2024 Verseday, All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(LogUdonArrayUtilsLibrary, Display, All)
+DECLARE_LOG_CATEGORY_EXTERN(LogVersedayArrayUtilsLibrary, Display, All)

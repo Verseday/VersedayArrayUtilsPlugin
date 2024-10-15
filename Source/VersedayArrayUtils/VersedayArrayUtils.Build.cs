@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class UdonArrayUtils : ModuleRules
+public class VersedayArrayUtils : ModuleRules
 {
-    public UdonArrayUtils(ReadOnlyTargetRules Target) : base(Target)
+    public VersedayArrayUtils(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
